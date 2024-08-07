@@ -1,5 +1,33 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {}
+    "点击存储": {
+        "recognition": "OCR",
+        "expected": "世界弹射",
+        "action": "Click",
+        "next": [
+            "点击其他应用"
+        ]
+    },
+    "向下滑动": {
+        "action": "Swipe",
+        "begin": [
+            100,
+            100,
+            10,
+            10
+        ],
+        "end": [
+            100,
+            500,
+            10,
+            10
+        ],
+        "next": [
+            "点击其他应用"
+        ]
+    },
+    "点击其他应用": {
+        "recognition": "OCR",
+        "expected": "其他应用",
+        "action": "Click"
+    }
 }
